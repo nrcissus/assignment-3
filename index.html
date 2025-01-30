@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
+    <link
+      rel="shortcut icon"
+      href="./c1-assets/logo-header.png"
+      type="image/x-icon"
+    />
     <!--GOOGLE FONTS CDN-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +24,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "btn-pri": "#FFDC26",
             },
           },
         },
@@ -43,14 +49,96 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/9dcfba0288.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="font-sora">
     <!--HEADER SECTION-->
-    <header class="mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 max-w-7xl">
+    <header>
+      <!--Nav Bar-->
+      <div class="navbar bg-base-100 bg-[#FFF9F4] w-full">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <!--Header Logo-->
+          <div class="flex items-center gap-1 space-x-1">
+            <!--Logo-->
+            <div>
+              <img src="./c1-assets/logo-header.png" alt="" />
+            </div>
+            <!--Brand Name-->
+            <div>
+              <a class="font-sora text-2xl"
+                >Browse<span class="text-yellow-500">4</span>Pets</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-3">
+          <i class="fa-regular fa-bell fa-2x"></i>
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          <a class="btn border border-[#FFDC26] bg-white text-xl font-normal"
+            >Login</a
+          >
+          <a class="btn bg-[#FFDC26] text-xl font-normal">Register</a>
+        </div>
+      </div>
     </header>
 
     <!--MAIN SECTION-->
-    <main></main>
+    <main class="mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 max-w-7xl mt-20 mb-20">
+      <!--Banner Container-->
+      <div class="flex flex-col relative">
+        <!--Text Content-->
+        <div class="space-y-4 relative z-10 pt-20">
+          <h1 class="font-ADLaM text-6xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+          <p class="font-sora text-xl text-gray-500">
+            Discover a world of treats, toys, and essentials handpicked for <br> your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <a class="btn bg-[#FFDC26] text-xl font-normal px-5">Find A Pet</a>
+        </div>
+        <!--Image Content-->
+        <div class=" relative z-0 -mt-[340px]">
+            <img class="mx-auto w-full" src="./c1-assets/cat-big.png" alt="">
+        </div>
+      </div>
+    </main>
 
     <!--FOOTER SECTION-->
     <footer></footer>
