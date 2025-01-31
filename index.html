@@ -61,7 +61,9 @@
     <header>
       <!--Nav Bar-->
       <div class="navbar bg-base-100 bg-[#FFF9F4] w-full">
-        <div class="navbar-start">
+        <div
+          class="navbar-start flex space-x-96 w-full sm:flex-none sm:space-x-0 sm:w-[580px] lg:w-[550px]"
+        >
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -96,7 +98,7 @@
             </div>
             <!--Brand Name-->
             <div>
-              <a class="font-sora text-2xl"
+              <a class="font-sora text-2xl max-sm:hidden"
                 >Browse<span class="text-yellow-500">4</span>Pets</a
               >
             </div>
@@ -109,7 +111,7 @@
             <li><a>Contact us</a></li>
           </ul>
         </div>
-        <div class="navbar-end space-x-3">
+        <div class="navbar-end space-x-3 max-sm:hidden">
           <i class="fa-regular fa-bell fa-2x"></i>
           <i class="fa-solid fa-magnifying-glass fa-2x"></i>
           <a class="btn border border-[#FFDC26] bg-white text-xl font-normal"
@@ -121,23 +123,138 @@
     </header>
 
     <!--MAIN SECTION-->
-    <main class="mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 max-w-7xl mt-20 mb-20">
+    <main
+      class="mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 max-w-7xl sm:mt-5 space-y-20"
+    >
       <!--Banner Container-->
-      <div class="flex flex-col relative">
+      <section class="flex flex-col relative">
         <!--Text Content-->
-        <div class="space-y-4 relative z-10 pt-20">
-          <h1 class="font-ADLaM text-6xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+        <div class="space-y-4 relative z-10 max-sm:p-5 lg:pt-20">
+          <h1 class="font-ADLaM text-3xl md:text-4xl lg:text-6xl">
+            Pamper Your Pet,<br />
+            Because They Deserve <br />
+            the Best
+          </h1>
           <p class="font-sora text-xl text-gray-500">
-            Discover a world of treats, toys, and essentials handpicked for <br> your
-            furry friends. Shop now and make tails wag with joy!
+            Discover a world of treats, toys, and essentials handpicked for
+            <br />
+            your furry friends. Shop now and make tails wag with joy!
           </p>
-          <a class="btn bg-[#FFDC26] text-xl font-normal px-5">Find A Pet</a>
+          <a class="btn bg-[#FFDC26] text-xl font-normal px-5 hover:bg-yellow-200">Find A Pet</a>
         </div>
         <!--Image Content-->
-        <div class=" relative z-0 -mt-[340px]">
-            <img class="mx-auto w-full" src="./c1-assets/cat-big.png" alt="">
+        <div
+          class="relative z-0 lg:-mt-[340px] max-sm:-mt-[150px] max-md:-mt-[150px] max-lg:-mt-[150px]"
+        >
+          <img class="mx-auto w-full" src="./c1-assets/cat-big.png" alt="" />
         </div>
-      </div>
+      </section>
+
+      <!--Browse By Categories-->
+      <section>
+        <div>
+          <!--Text Content-->
+          <div>
+            <h1 class="font-ADLaM text-2xl sm:text-4xl mb-10">
+              Browse By Categories
+            </h1>
+          </div>
+
+          <!--Card Content-->
+          <div class="grid grid-cols-2 grid-rows-3 lg:flex flex-row gap-6 ">
+            <!--Card 1-->
+            <div class="bg-[#F9DF8A] rounded-xl p-10 space-y-6">
+              <img
+                class="bg-white rounded-full p-5 mx-auto"
+                src="./c1-assets/dog-cartoon.png"
+                alt=""
+              />
+              <div class="text-center">
+                <h2 class="font-ADLaM text-xl">Dog</h2>
+                <p class="font-sora text-base">3 Items</p>
+              </div>
+            </div>
+            
+            <!--Card 2-->
+            <div class="bg-[#F9DF8A] rounded-xl p-10 space-y-6">
+              <img
+                class="bg-white rounded-full p-5 mx-auto"
+                src="./c1-assets/fish-cartoon.png"
+                alt=""
+              />
+              <div class="text-center">
+                <h2 class="font-ADLaM text-xl">Fish</h2>
+                <p class="font-sora text-base">3 Items</p>
+              </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="bg-[#F9DF8A] rounded-xl p-10 space-y-6">
+              <img
+                class="bg-white rounded-full p-5 mx-auto"
+                src="./c1-assets/cat-cartoon.png"
+                alt=""
+              />
+              <div class="text-center">
+                <h2 class="font-ADLaM text-xl">Cat</h2>
+                <p class="font-sora text-base">3 Items</p>
+              </div>
+            </div>
+
+            <!--Card 4-->
+            <div class="bg-[#F9DF8A] rounded-xl p-10 space-y-6">
+              <img
+                class="bg-white rounded-full p-5 mx-auto"
+                src="./c1-assets/bird-cartoon.png"
+                alt=""
+              />
+              <div class="text-center">
+                <h2 class="font-ADLaM text-xl">Birds</h2>
+                <p class="font-sora text-base">3 Items</p>
+              </div>
+            </div>
+
+            <!--Card 5-->
+            <div class="bg-[#F9DF8A] rounded-xl p-10 space-y-6">
+              <img
+                class="bg-white rounded-full p-5 mx-auto"
+                src="./c1-assets/mouse-cartoon.png"
+                alt=""
+              />
+              <div class="text-center">
+                <h2 class="font-ADLaM text-xl">Small Pet</h2>
+                <p class="font-sora text-base">3 Items</p>
+              </div>
+            </div>
+
+            <!--Card 6-->
+            <div class="bg-[#F9DF8A] rounded-xl p-10 space-y-6">
+              <img
+                class="bg-white rounded-full p-5 mx-auto"
+                src="./c1-assets/rabbit-cartoon.png"
+                alt=""
+              />
+              <div class="text-center">
+                <h2 class="font-ADLaM text-xl">Rabbit</h2>
+                <p class="font-sora text-base">3 Items</p>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+
+      <!--Trending Pet Products-->
+      <section>
+        <h1>Hello</h1>
+      </section>
+
+      <!--Everyday low Price-->
+      <section></section>
+
+      <!--Get Pawsome News!-->
+      <section></section>
     </main>
 
     <!--FOOTER SECTION-->
