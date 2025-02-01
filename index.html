@@ -41,6 +41,17 @@
       .font-ADLaM {
         font-family: "ADLaM Display", serif;
       }
+
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        min-width: 0;
+      }
     </style>
 
     <!--DAISY UI-->
@@ -124,10 +135,10 @@
     </header>
 
     <!--MAIN SECTION-->
-    <main class="sm:mt-5 space-y-20 relative">
+    <main class="sm:mt-5 space-y-20">
       <!--Banner Container-->
       <section
-        class="mx-auto sm:px-1 xl:px-3 max-w-7xl flex flex-col relative animate"
+        class="mx-auto sm:px-1 xl:px-3 max-w-7xl flex flex-col relative"
       >
         <!--Text Content-->
         <div class="space-y-4 relative z-10 max-sm:p-5 lg:pt-20">
@@ -274,10 +285,10 @@
 
               <!--Image-->
               <div
-                class="absolute z-0 max-sm:-mt-[250px] lg:-mt-[100px] left-[250px]"
+                class="absolute z-0 max-sm:-mt-[250px] lg:-mt-[120px] left-[300px]"
               >
                 <img
-                  class="max-sm:w-[200px]"
+                  class="max-w-full h-auto mx-auto"
                   src="./c1-assets/cute-pet-small.png"
                   alt=""
                 />
@@ -351,7 +362,7 @@
               >
                 <!--Image-->
                 <div class="bg-red-100 p-4 rounded-lg">
-                  <img src="./c1-assets/mouse-cartoon.png" alt="" />
+                  <img src="./c1-assets/rabbit-cartoon.png" alt="" />
                 </div>
 
                 <!--Text-->
@@ -464,7 +475,7 @@
       </section>
 
       <!--Authentic & Best Priced-->
-      <section class="h-[400px] bg-[url('./c1-assets/pet-bg.jpg')] bg-cover bg-center"> 
+      <section class="relative max-h-[400px] bg-[url('./c1-assets/pet-bg.jpg')] bg-cover bg-center"> 
         <div class="lg:text-center items-center max-sm:py-40 lg:py-32">
           <!--Text-->
           <h1 class="font-sora max-sm:text-4xl lg:text-5xl ">Authentic & Best Priced</h1>
