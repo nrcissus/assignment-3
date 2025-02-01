@@ -1,4 +1,6 @@
-/*
+
+  
+  /*
 
 font-ADLaM
 
@@ -14,3 +16,4 @@ class="bg-gray-500 w-full"
 
 max-sm:flex flex-row-reverse justify-between max-sm:w-full
 */
+
